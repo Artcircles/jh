@@ -5,10 +5,11 @@
 
 
 
-<p>涉及Python，Bash(Shell编程)，Linux 
-Nginx的数据库，Redis的的，深度学习，机器学习。<p>
+<p>涉及Python,Bash(Shell编程),Linux, 
+Nginx数据库,Redis,深度学习,机器学习。<p>
 
 
-######看完点收藏，不撸也变强!!1######
+###### 看完点收藏,不撸也变强!!! ######
+
 
 
