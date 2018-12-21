@@ -85,8 +85,57 @@ set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 新建文件设置
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd BufNewFile *.cpp,*.cc,*.c,*.hpp,*.h,*.sh,*.py exec ":call SetTitle()"
+autocmd BufNewFile *.hpp,*.h,*.c,*.cpp exec ":call SetTitle()"
+
+"加入注释
+func SetComment()
+	call setline(1,"/*===============================================================")
+	call append(line("."), "* Copyright (C) ".strftime("%Y")." All rights reserved.")
+	call append(line(".")+1, "* ")
+	call append(line(".")+2, "* 文件名称：".expand("%:t"))
+	call append(line(".")+3, "* 创 建 者：jianghu")
+	call append(line(".")+4, "* 创建日期：".strftime("%Y年%m月%d日"))
+	call append(line(".")+5, "* 描 述：")
+	call append(line(".")+6, "*")
+	call append(line(".")+7, "* 更新日志：")
+	call append(line(".")+8, "*")
+	call append(line(".")+9, "================================================================*/")
+endfunc
+
+"定义函数SetTitle，自动插入C头文件
 func SetTitle()
+call SetComment()
+	if expand("%:e") == 'hpp'
+		call append(line(".")+10, "#ifndef _".toupper(expand("%:t:r"))."_H")
+		call append(line(".")+11, "#define _".toupper(expand("%:t:r"))."_H")
+		call append(line(".")+12, "#ifdef __cplusplus")
+		call append(line(".")+13, "extern \"C\"")
+		call append(line(".")+14, "{")
+		call append(line(".")+15, "#endif")
+		call append(line(".")+16, "")
+		call append(line(".")+17, "#ifdef __cplusplus")
+		call append(line(".")+18, "}")
+		call append(line(".")+19, "#endif")
+		call append(line(".")+20, "#endif //".toupper(expand("%:t:r"))."_H")
+	elseif expand("%:e") == 'h'
+		call append(line(".")+10, "#endif")
+		call append(line(".")+10, "")
+        call append(line(".")+10, "#ifndef _".toupper(expand("%:t:r"))."_H")
+        call append(line(".")+11, "#define _".toupper(expand("%:t:r"))."_H")
+    elseif expand("%:e") == 'c'
+        call append(line(".")+10,"#include \<strings.h\>")
+        call append(line(".")+10,"#include \<stdlib.h\>")
+        call append(line(".")+10,"#include \<string.h\>")
+        call append(line(".")+10,"#include \<stdio.h\>")
+    elseif expand("%:e") == 'cpp'
+        call append(line(".")+10,"#include \<iostream\>")
+        call append(line(".")+10,"using namespace std;")
+    endif
+endfunc
+
+"定义函数SetTitle1，自动插入*.sh,*.py文件注释
+autocmd BufNewFile *.sh,*.py exec ":call SetTitle1()"
+func SetTitle1()
     if expand("%:e") == 'sh'
         call setline(1,"\#!/bin/bash")
         call append(line("."), "")
@@ -94,19 +143,6 @@ func SetTitle()
         call setline(1,"#!/usr/bin/env python")
         call append(line("."),"# coding=utf-8")
         call append(line(".")+1, "")
-    elseif expand("%:e") == 'cpp'
-        call setline(1,"#include <iostream>")
-        call append(line("."), "")
-    elseif expand("%:e") == 'cc'
-        call setline(1,"#include <iostream>")
-        call append(line("."), "")
-    elseif expand("%:e") == 'c'
-        call setline(1,"#include <stdio.h>")
-        call append(line("."), "")
-    elseif expand("%:e") == 'h'
-        call setline(1, "#pragma once")
-    elseif expand("%:e") == 'hpp'
-        call setline(1, "#pragma once")
     endif
 endfunc
 autocmd BufNewFile * normal G
