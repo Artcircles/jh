@@ -14,6 +14,10 @@
 ##### 6. [深度学习、机器学习](https://github.com/Artcircles/jh/tree/master/Deep_learning) #####
 ##### 7. [office_word 数学公式编辑](https://github.com/Artcircles/jh/tree/master/office) #####
 
+<center> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> </center>
+<center> $$$$$$$$$$$**$$$$$$$$$$$ </center>
+<center> <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< </center>
+
 ##### 一 、 office_word 数学公式编辑 提示!!! #####
 打开office word 按:
 
