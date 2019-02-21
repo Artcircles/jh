@@ -15,7 +15,6 @@
 ##### 7. [office_word 数学公式编辑](https://github.com/Artcircles/jh/tree/master/office) #####
 
 <center> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> </center> <br />
-<center> $$$$$$$$$$$**$$$$$$$$$$$ </center> <br />
 <center> <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< </center> <br />
 
 ##### 一 、 office_word 数学公式编辑 提示!!! #####
