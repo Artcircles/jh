@@ -4,24 +4,24 @@
 ### 编程书籍 ###
 
 
-##### [Python](https://github.com/Artcircles/jh/tree/master/python) #####
-##### [Linux学习](https://github.com/Artcircles/jh/tree/master/linux) #####
+##### 1. [Python](https://github.com/Artcircles/jh/tree/master/python) #####
+##### 2. [Linux学习](https://github.com/Artcircles/jh/tree/master/linux) #####
 
-> ##### [Bash(Shell编程)](https://github.com/Artcircles/jh/tree/master/bash) #####
+> ##### 3. [Bash(Shell编程)](https://github.com/Artcircles/jh/tree/master/bash) #####
 
-##### [Nginx数据库](https://github.com/Artcircles/jh/tree/master/nginx) #####
-##### [Redis](https://github.com/Artcircles/jh/tree/master/redis) #####
-##### [深度学习、机器学习](https://github.com/Artcircles/jh/tree/master/Deep_learning) #####
-##### [office_word 数学公式编辑](https://github.com/Artcircles/jh/tree/master/office) #####
+##### 4. [Nginx数据库](https://github.com/Artcircles/jh/tree/master/nginx) #####
+##### 5. [Redis](https://github.com/Artcircles/jh/tree/master/redis) #####
+##### 6. [深度学习、机器学习](https://github.com/Artcircles/jh/tree/master/Deep_learning) #####
+##### 7. [office_word 数学公式编辑](https://github.com/Artcircles/jh/tree/master/office) #####
 
-###### 1. office_word 数学公式编辑 提示!!! ######
+##### 一 、 office_word 数学公式编辑 提示!!! #####
 打开office word 按:
 
     'alt' + '=' # 加号不需要哦，只有 ' alt' 和 '='
 
 同时按 `alt` + `=` 键即可编写公式，或者选中公式在同时按 `alt` + `=` 键可以规范公式 
 
-### vimrc c/c++ 配置 ###
+### 二、 vimrc c/c++ 配置 ###
 > [vimrc 配置请看此链接](https://github.com/Artcircles/jh/tree/master/vimrc)
 
 <p> 在vimrc目录中上传了有关 `vim` 的部分使用快捷键、后续还会更新!!! <p>
