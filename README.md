@@ -19,7 +19,7 @@
 <p> 在vimrc目录中上传了有关[ `vim` ](https://github.com/Artcircles/jh/blob/master/vimrc/vim_hot_key.txt)的部分使用快捷键、后续还会更新!!! <p>
 
 #### vimrc 使用介绍 ####
-<p> 下载此[ `vimrc` ](https://github.com/Artcircles/jh/blob/master/vimrc/vimrc)文件后,复制到 `/home/user/.vimrc`  目录下。 <p>
+<p> 下载此[ `vimrc` ](https://github.com/Artcircles/jh/blob/master/vimrc/vimrc)  文件后,复制到 `/home/user/.vimrc`  目录下。 <p>
 <p> 此处我使用manjaro linux 安装 `svn` 下载单个文件夹的方法，克隆整个文件夹太大，不值得. <p>
 
     $ cd ~ #进入home目录
