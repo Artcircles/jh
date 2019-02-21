@@ -30,11 +30,19 @@
 
 <p>用 `vim` 编辑器打开 `.vimrc` 文件.在命令行模式下执行 `PlugInstall`<p>
 <p>如图:<p>
-<p>![PlugInstall](https://github.com/Artcircles/jh/blob/master/vimrc/vim_pictures/vim_Plugin1.png "PlugInstall")<p>
+
+<div align="center">
+<img src="https://github.com/Artcircles/jh/blob/master/vimrc/vim_pictures/vim_Plugin1.png " alt=""/><br />
+</div>
 
 <p>最终配置结果:<p>
-<p>![美化结果主题1](https://github.com/Artcircles/jh/blob/master/vimrc/vim_pictures/vim_Plugin2.png "美化结果主题1")<p>
-<p>![美化结果主题2](https://github.com/Artcircles/jh/blob/master/vimrc/vim_pictures/vim_Plugin3.png "美化结果主题2")<p>
+</div align="center">
+<img src="https://github.com/Artcircles/jh/blob/master/vimrc/vim_pictures/vim_Plugin2.png" alt=""/><br />
+</div>
+
+<div align="center">
+<img src="https://github.com/Artcircles/jh/blob/master/vimrc/vim_pictures/vim_Plugin3.png" alt=""/)<br />
+</div>
 
 <strong><em> 看完点收藏,不撸也变强!!! </strong></em>
 
