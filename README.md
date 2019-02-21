@@ -44,5 +44,5 @@
 <img src="https://github.com/Artcircles/jh/blob/master/vimrc/vim_pictures/vim_Plugin3.png" alt=""/)<br />
 </div>
 
-<strong><em> 看完点收藏,不撸也变强!!! </strong></em>
+<strong><em>c/c++ k开发配置，及使用介绍后续更新!!! </strong></em>
 
