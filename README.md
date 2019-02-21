@@ -12,6 +12,7 @@
 ##### [Nginx数据库](https://github.com/Artcircles/jh/tree/master/nginx) #####
 ##### [Redis](https://github.com/Artcircles/jh/tree/master/redis) #####
 ##### [深度学习、机器学习](https://github.com/Artcircles/jh/tree/master/Deep_learning) #####
+##### [office_word 数学公式编辑](https://github.com/Artcircles/jh/tree/master/office) #####
 
 ### vimrc c/c++ 配置 ###
 > [vimrc 配置请看此链接](https://github.com/Artcircles/jh/tree/master/vimrc)
