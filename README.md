@@ -22,10 +22,12 @@
 <p> 下载此[ `vimrc` ](https://github.com/Artcircles/jh/blob/master/vimrc/vimrc)文件后,复制到 `/home/user/.vimrc`  目录下。 <p>
 <p> 此处我使用manjaro linux 安装 `svn` 下载单个文件夹的方法，克隆整个文件夹太大，不值得. <p>
 ```
-$ cd ~ #进入home目录
-$ sudo pacman -S svn 
-$ svn checkout https://github.com/Artcircles/jh/trunk/vimrc
-$ cp ~/vimrc/vimrc ~/.vimrc
+
+    $ cd ~ #进入home目录
+    $ sudo pacman -S svn 
+    $ svn checkout https://github.com/Artcircles/jh/trunk/vimrc
+    $ cp ~/vimrc/vimrc ~/.vimrc
+
 ```
 
 <P> 用 `vim` 编辑器打开 `.vimrc` 文件.在命令行模式下执行 `PlugInstall` <p>
