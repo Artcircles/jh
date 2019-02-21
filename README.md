@@ -14,7 +14,7 @@
 ##### [深度学习、机器学习](https://github.com/Artcircles/jh/tree/master/Deep_learning) #####
 ##### [office_word 数学公式编辑](https://github.com/Artcircles/jh/tree/master/office) #####
 
-###### 1. office_word 数学公式编辑 提示！！！######
+###### 1. office_word 数学公式编辑 提示!!! ######
 打开office word 按:
 
     'alt' + '=' # 加号不需要哦，只有 ' alt' 和 '='
