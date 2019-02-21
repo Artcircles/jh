@@ -27,8 +27,8 @@
 在vimrc目录中上传了有关  `vim`  的部分使用快捷键、后续还会更新!!!
 
 #### vimrc 使用介绍 ####
-下载此 `vimrc` 文件后,复制到  `/home/user/.vimrc`  目录下。 <p>
-<p> 此处我使用manjaro linux 安装  `svn`  下载单个文件夹的方法，克隆整个文件夹太大，不值得. <p>
+下载此 `vimrc` 文件后,复制到 `/home/user/.vimrc` 目录下。 <br />
+此处我使用manjaro linux 安装 `svn` 下载单个文件夹的方法，克隆整个文件夹太大，不值得.
 
     $ cd ~ #进入home目录
     $ sudo pacman -S svn 
@@ -36,14 +36,14 @@
     $ cp ~/vimrc/vimrc ~/.vimrc
 
 
-<p>用  `vim`  编辑器打开  `.vimrc`  文件.在命令行模式下执行  `PlugInstall` <p>
-<p>如图:<p>
+用 `vim` 编辑器打开 `.vimrc` 文件.在命令行模式下执行  `PlugInstall` <br /> 
+如图:
 
 <div align="center">
 <img src="https://github.com/Artcircles/jh/blob/master/vimrc/vim_pictures/vim_Plugin1.png " alt=""/><br />
 </div>
 
-<p>最终配置结果:<p>
+<p>最终配置主题效果:<p>
 </div align="center">
 <img src="https://github.com/Artcircles/jh/blob/master/vimrc/vim_pictures/vim_Plugin2.png" alt=""/><br />
 </div>
