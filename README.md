@@ -16,7 +16,7 @@
 ### vimrc c/c++ 配置 ###
 > [vimrc 配置请看此链接](https://github.com/Artcircles/jh/tree/master/vimrc)
 
-<p> 在vimrc目录中上传了有关[ `vim` ](https://github.com/Artcircles/jh/blob/master/vimrc/vim_hot_key.txt)的部分使用快捷键、后续还会更新!!! <p>
+<p> 在vimrc目录中上传了有关[ `vim` ](https://github.com/Artcircles/jh/blob/master/vimrc/vim_hot_key.txt)  的部分使用快捷键、后续还会更新!!! <p>
 
 #### vimrc 使用介绍 ####
 <p> 下载此[ `vimrc` ](https://github.com/Artcircles/jh/blob/master/vimrc/vimrc)  文件后,复制到 `/home/user/.vimrc`  目录下。 <p>
