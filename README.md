@@ -14,6 +14,13 @@
 ##### [深度学习、机器学习](https://github.com/Artcircles/jh/tree/master/Deep_learning) #####
 ##### [office_word 数学公式编辑](https://github.com/Artcircles/jh/tree/master/office) #####
 
+###### 1. office_word 数学公式编辑 提示！！！######
+打开office word 按:
+
+    'alt' + '=' # 加号不需要哦，只有 ' alt' 和 '='
+
+同时按 `alt` + `=` 键即可编写公式，或者选中公式在同时按 `alt` + `=` 键可以规范公式 
+
 ### vimrc c/c++ 配置 ###
 > [vimrc 配置请看此链接](https://github.com/Artcircles/jh/tree/master/vimrc)
 
