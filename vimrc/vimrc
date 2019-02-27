@@ -154,7 +154,7 @@ call SetComment()
 endfunc
 
 "定义函数SetTitle1，自动插入*.sh,*.py文件注释
-autocmd BufNewFile *.sh,*.py exec ":call SetTitle1()"
+autocmd BufNewFile *.sh,*.py,*.R,*.r exec ":call SetTitle1()"
 func SetTitle1()
     if expand("%:e") == 'sh'
         call setline(1,"\#!/bin/bash")
@@ -162,6 +162,12 @@ func SetTitle1()
     elseif expand("%:e") == 'py'
         call setline(1,"#!/usr/bin/env python")
         call append(line("."),"# coding=utf-8")
+        call append(line(".")+1, "")
+    elseif expand("%:e") == 'R'
+        call setline(1,"\#!/usr/bin/Rscript")
+        call append(line(".")+1, "")
+    elseif expand("%:e") == 'r'
+        call setline(1,"\#!/usr/bin/Rscript")
         call append(line(".")+1, "")
     endif
 endfunc
@@ -268,6 +274,9 @@ Plug 'vim-scripts/mru.vim'
 Plug 'kshenoy/vim-signature'
 " gundo 树插件
 Plug 'sjl/gundo.vim'
+" GDB 终端仿真器
+" Plug 'vim-scripts/Conque-GDB'
+
 call plug#end()
 " ************END*************
 
@@ -671,6 +680,31 @@ nnoremap <leader>u :UndotreeToggle<cr>
 " 调用 gundo 树
 nnoremap <Leader>ud :GundoToggle<CR>
 
+
+function! s:get_undotree_dir() "{{{
+    let s:undotree_dir=
+        \ substitute(substitute(fnamemodify(
+        \ get(s:, 'undotree_dir',
+        \  ($XDG_CACHE_HOME != '' ?
+        \   $XDG_CACHE_HOME . '/undotree' : expand('~/.cache/undotree'))),
+        \  ':p'), '\\', '/', 'g'), '/$', '', '')
+
+    if !isdirectory(s:undotree_dir)
+        call mkdir(s:undotree_dir, 'p')
+    endif
+
+    return s:undotree_dir
+endfunction"}}}
+
+" nnoremap <F8> :UndotreeToggle<cr>
+if has("persistent_undo")
+    let s:undotree_dir = "~/.cache/undotree"
+    call s:get_undotree_dir()
+    let &undodir = s:undotree_dir
+    set undofile
+endif
+
+
 "fzf settings
 nnoremap <Tab> :FZF <cr>
 function! s:build_quickfix_list(lines)
@@ -771,7 +805,7 @@ let g:autoformat_verbosemode=1
 " 主题修改的地方
 "Dracular vim
 " color dracula 
-" color Atelier_LakesideDark
+" color Atelier_LakesideDark briofita carvedwood
 color space-vim-dark
 
 "vim edit
