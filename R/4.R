@@ -1,0 +1,33 @@
+library(foreign)
+w <- read.spss("/home/jh/Documents/jh/R/4.1.1.sav",to.data.frame = TRUE)
+
+#lm.1 <- lm(Y~X1+X2,data = w)
+#summary(lm.1)
+
+w <- as.matrix(w)
+stdx <- scale(w[,2:4],center = TRUE,scale = TRUE)
+stdx <- as.data.frame(stdx)
+lm.2 <- lm(Y~X1+X2,data = stdx)
+summary(lm.2)
+attach(stdx)
+plot(Y~X1)
+abline(lm(Y~X1))
+plot(Y~X2)
+abline(lm(Y~X2))
+
+resid <- residuals(lm.2)
+stdresid <- rstandard(lm.2)
+y.pre <- predict(lm.2)
+plot(y.pre,resid)
+plot(y.pre,stdresid)
+plot(lm.2,2)
+
+
+library(foreign)
+w <- read.spss("/home/jh/Documents/jh/R/4.2.1.sav",to.data.frame = TRUE)
+lm.3 <- lm(Y~X1+X2+X3+X4+X5,data = w)
+lm.step <- step(lm.3)
+summary(lm.3)
+summary(lm.step)
+lm.4 <- lm(Y~X2+X4+X5,data = w)
+summary(lm.4)
