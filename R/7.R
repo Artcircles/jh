@@ -1,4 +1,4 @@
-w <- read.table("/home/jh/Documents/jh/R/7.3.2.txt",header = TRUE)
+w <- read.table("/home/jh/Desktops/R/7.3.2.txt",header = TRUE)
 # 欧式距离
 rownames(w) <- w[,1]
 stdx <- scale(w[,2:9],center = TRUE, scale = TRUE)
